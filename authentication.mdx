@@ -3,7 +3,17 @@ title: 'Authentication'
 description: 'Learn how to authenticate your requests'
 ---
 
-The Delaphone API uses API keys for authentication
+The Delaphone API uses API keys for authentication. All API requests must include your API key in an `Authorization` HTTP header as follows:
+```text
+Authorization: Bearer DELAPHONE_API_KEY
+```
+
 <Warning>
-    Please keep your API keys a secret. Treat them as passwords
+    Remember to keep your API key a secret. Do not share them with others or expose it in client-side code.
+    You can always revoke an exposed API key.
 </Warning>
+
+## Generate API key
+
+## Revoke API key
+
