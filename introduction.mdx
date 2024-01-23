@@ -21,7 +21,10 @@ our official Node.js library, or a community-maintained library.
 The Delaphone API uses API keys for authentication.
 *Remember that your API key is a secret!* Do not share it with others or expose it in any client-side code (browsers, apps).
 Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable
-or key management service. All API requests should include your API key in an Authorization HTTP header as follows:
+or key management service. All API requests should include your API key in an `Authorization` HTTP header as follows:
+```text
+Authorization: Bearer OPENAI_API_KEY
+```
 
 ## API Resources
 Our API has or provides two(2) resources you can take advantage of.
